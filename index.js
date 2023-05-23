@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const youtubeIcon = document.querySelector('#youtube i.fa-youtube');
 
 let replacementTimeout;
