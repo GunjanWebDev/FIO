@@ -91,6 +91,7 @@ twitterIcon.addEventListener('mouseout', () => {
 
 
 
+
 // Function to fetch videos from a YouTube channel using the YouTube Data API
 async function fetchVideosFromChannel(channelId, apiKey) {
   const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=50&key=${apiKey}`;
@@ -128,8 +129,8 @@ function createVideoCardElement(video) {
 }
 
 // Your YouTube channel ID and API key
-const apiKey = 'AIzaSyCVFL9-auB4M7IGlU-kEtGqEHVVwDaAIL8';
-const channelId = 'UC2OM05m1q4RSE8eFrQ-oXYQ';
+// const apiKey = 'AIzaSyCVFL9-auB4M7IGlU-kEtGqEHVVwDaAIL8';
+// const channelId = 'UC2OM05m1q4RSE8eFrQ-oXYQ';
 
 // Fetch videos from the channel and create video card elements
 fetchVideosFromChannel(channelId, apiKey)
