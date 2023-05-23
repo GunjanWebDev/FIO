@@ -128,8 +128,8 @@ function createVideoCardElement(video) {
 }
 
 // Your YouTube channel ID and API key
-const apiKey = process.env.API_KEY;
-const channelId = process.env.CHANNEL_ID;
+const apiKey = 'AIzaSyCVFL9-auB4M7IGlU-kEtGqEHVVwDaAIL8';
+const channelId = 'UC2OM05m1q4RSE8eFrQ-oXYQ';
 
 // Fetch videos from the channel and create video card elements
 fetchVideosFromChannel(channelId, apiKey)
