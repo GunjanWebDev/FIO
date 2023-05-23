@@ -1,3 +1,4 @@
+require('dotenv').config();
 const youtubeIcon = document.querySelector('#youtube i.fa-youtube');
 
 let replacementTimeout;
@@ -126,8 +127,8 @@ function createVideoCardElement(video) {
 }
 
 // Your YouTube channel ID and API key
-const channelId = 'UC2OM05m1q4RSE8eFrQ-oXYQ';
-const apiKey = 'AIzaSyCVFL9-auB4M7IGlU-kEtGqEHVVwDaAIL8';
+const apiKey = process.env.API_KEY;
+const channelId = process.env.CHANNEL_ID;
 
 // Fetch videos from the channel and create video card elements
 fetchVideosFromChannel(channelId, apiKey)
