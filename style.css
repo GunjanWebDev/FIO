@@ -235,6 +235,7 @@ flex-direction: row;
 align-items: flex-end;
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding: 10px;
  
    
 
@@ -253,12 +254,12 @@ align-items: flex-end;
   position: absolute;
   width: 597px;
   height: 106px;
-  top: 980px;
+  top: 978px;
   left: 145px;
   font-family: 'Gruppo', cursive;
   font-style: bold;
   font-weight: 700;
- 
+  padding: 2px;
   line-height: 21px;
   /* or 191% */
   
@@ -274,12 +275,12 @@ align-items: flex-end;
   display: flex;
   font-family: 'Gruppo', cursive;
   flex-direction: row;
-  left: 790px;
+  left: 844px;
   position: absolute;
   width: 180px;
   align-items: center;
   justify-content: space-between;
-  top: 1049px;
+  top: 1083px;
 
 }
 
@@ -291,7 +292,8 @@ align-items: flex-end;
   position: absolute;
 width: 600px;
 height: 9px;
-left: 1200px;
+left: 1260px;
+padding: 10px;
 top: 980px;
 
 }
