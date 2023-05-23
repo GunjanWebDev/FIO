@@ -398,9 +398,14 @@ top: 980px;
     .hero img {
       position: absolute;
       width: 100%;
-      top: -3px;
+      top: 10px;
       z-index: -1;
   }
+
+  .zoomed-image {
+    transform: scale(1.3); /* Adjust the scale value to zoom in/out */
+  }
+  
     .yellowsection {
       top: 59px;
     }
