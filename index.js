@@ -189,3 +189,67 @@ microphoneIcon.addEventListener('mouseout', () => {
 const yearElement = document.getElementById('year');
 const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;
+
+
+// Get the elements
+
+
+// Function to handle media query change
+function handleMediaQuery(mq) {
+  if (mq.matches) {
+    // Add classes for small screens
+    youtubeIcon.classList.add('fa-2xs');
+    spotofyIcon.classList.add('fa-2xs');
+    instagramIcon.classList.add('fa-2xs');
+    twitterIcon.classList.add('fa-2xs');
+  } else {
+    // Remove classes for larger screens
+    youtubeIcon.classList.remove('fa-2xs');
+    spotofyIcon.classList.remove('fa-2xs');
+    instagramIcon.classList.remove('fa-2xs');
+    twitterIcon.classList.remove('fa-2xs');
+  }
+}
+
+// Media query for max-width: 600px
+const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+// Initial handling of media query
+handleMediaQuery(mediaQuery);
+
+// Event listener for media query change
+mediaQuery.addEventListener('change', (e) => handleMediaQuery(e.target));
+
+// Event listeners for hover effects
+youtubeIcon.addEventListener('mouseenter', () => {
+  youtubeIcon.classList.add('fa-xs');
+});
+
+youtubeIcon.addEventListener('mouseleave', () => {
+  youtubeIcon.classList.remove('fa-xs');
+});
+
+spotofyIcon.addEventListener('mouseenter', () => {
+  spotofyIcon.classList.add('fa-xs');
+});
+
+spotofyIcon.addEventListener('mouseleave', () => {
+  spotofyIcon.classList.remove('fa-xs');
+});
+
+instagramIcon.addEventListener('mouseenter', () => {
+  instagramIcon.classList.add('fa-xs');
+});
+
+instagramIcon.addEventListener('mouseleave', () => {
+  instagramIcon.classList.remove('fa-xs');
+});
+
+twitterIcon.addEventListener('mouseenter', () => {
+  twitterIcon.classList.add('fa-xs');
+});
+
+twitterIcon.addEventListener('mouseleave', () => {
+  twitterIcon.classList.remove('fa-xs');
+});
+
